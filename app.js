@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -12,10 +11,12 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Define the route for the test page
 app.get('/test', (req, res) => {
-    res.send('test.html')
+  res.sendFile(path.join(__dirname, 'public', 'test.html'));
 });
 
+// Start the server
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
