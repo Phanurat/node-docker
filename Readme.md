@@ -33,3 +33,10 @@ my-node-app/
 │   .dockerignore
 └───node_modules/
 ```
+
+### install mongoose
+```sh
+npm install mongoose
+```
+
+
